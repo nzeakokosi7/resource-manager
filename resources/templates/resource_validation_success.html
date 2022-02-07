@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Manager | Verification</title>
+</head>
+<body>
+    <h2>Access Granted!</h2>
+    <div class="row">
+        {% if file %}
+        <p>You can now click <a target=" " href="{{url}}">here </a> to download your protected file</p>
+        {% else %}
+        <p>You can now click <a target=" " href="{{url}}">here </a> to redirect to your protected link</p>
+        {% endif %}
+
+    </div>
+</body>
+</html>

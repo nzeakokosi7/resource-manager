@@ -1,0 +1,42 @@
+[07/Feb/2022 20:56:21] INFO [django.utils.autoreload:578] Watching for file changes with StatReloader
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:267] Waiting for apps ready_event.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:273] Apps ready_event triggered. Sending autoreload_started signal.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/admin/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/auth/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/messages/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/rest_framework/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/authentication/locale with glob **/*.mo.
+[07/Feb/2022 20:56:21] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/locale with glob **/*.mo.
+[07/Feb/2022 20:56:29] INFO [django.server:154] "GET /authentication/ HTTP/1.1" 302 0
+[07/Feb/2022 20:56:29] INFO [django.server:154] "GET /resource/ HTTP/1.1" 200 2199
+[07/Feb/2022 20:56:29] ERROR [django.request:222] Internal Server Error: /static/app.css
+[07/Feb/2022 20:56:29] ERROR [django.server:154] "GET /static/app.css HTTP/1.1" 500 27
+[07/Feb/2022 20:56:48] ERROR [django.request:222] Internal Server Error: /
+[07/Feb/2022 20:56:48] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[07/Feb/2022 20:56:56] INFO [django.server:154] "GET /authentication/ HTTP/1.1" 302 0
+[07/Feb/2022 20:56:56] INFO [django.server:154] "GET /resource/ HTTP/1.1" 200 2199
+[07/Feb/2022 20:56:56] ERROR [django.request:222] Internal Server Error: /static/app.css
+[07/Feb/2022 20:56:56] ERROR [django.server:154] "GET /static/app.css HTTP/1.1" 500 27
+[07/Feb/2022 20:57:25] DEBUG [django.utils.autoreload:341] File /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/urls.py. is_changed: False, is_new: True
+[07/Feb/2022 20:57:25] DEBUG [django.utils.autoreload:342] File /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/urls.py previous mtime: None, current mtime: 1644267445.4189832
+[07/Feb/2022 20:57:25] DEBUG [django.utils.autoreload:302] /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x105a523a0>, None)].
+[07/Feb/2022 20:57:25] INFO [django.utils.autoreload:203] /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/urls.py changed, reloading.
+[07/Feb/2022 20:57:25] INFO [django.utils.autoreload:578] Watching for file changes with StatReloader
+[07/Feb/2022 20:57:25] DEBUG [django.utils.autoreload:267] Waiting for apps ready_event.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:273] Apps ready_event triggered. Sending autoreload_started signal.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/admin/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/auth/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/messages/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/rest_framework/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/authentication/locale with glob **/*.mo.
+[07/Feb/2022 20:57:26] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/locale with glob **/*.mo.
+[07/Feb/2022 20:57:27] WARNING [django.request:222] Not Found: /
+[07/Feb/2022 20:57:27] WARNING [django.server:154] "GET / HTTP/1.1" 404 469

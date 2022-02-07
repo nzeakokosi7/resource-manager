@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+</head>
+<body>
+    <h2>Invalid or Unauthorized Route</h2>
+    <p> You attempted to visit an invalid or protected route which you currently don't have access to.</p>
+    <p>Please refer to the following routes below if you're lost.</p>
+    <a href="{% url 'login' %}">Home</a> | <a href="{% url 'logout' %}">Log Out</a> | <a href="{% url 'logs' %}">View Logs</a>
+</body>
+</html>

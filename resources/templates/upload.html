@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+        $('#id_link').val('');
+        $('#id_file').val('');
+        $('#id_link').hide();
+        $('#id_file').hide('');
+        $("#file").prop("checked", false);
+        $("#link").prop("checked", false);
+
+    });
+    $(function(){
+      $('#radios input').on('change', function() {
+           if($('input[name=radioName]:checked', '#radios').val() == 1){
+                $('#id_file').hide();
+                $('#id_link').show();
+            };
+           if($('input[name=radioName]:checked', '#radios').val() == 2){
+                $('#id_link').hide();
+                $('#id_file').show();
+           };
+        });
+    });
+
+    </script>
+    <h4>Select the file or provide the resource Url you wish to protect</h4>
+    <form id="radios">
+        <input type="radio" name="radioName" id="link" value="1" /> Link
+        <input type="radio" name="radioName" id="file" value="2" /> File
+    </form>
+    <form method="post" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button formnovalidate="formnovalidate" type="submit" >Submit</button>
+    </form>
+
+{% endblock content %}

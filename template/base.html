@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title>Resource Manager</title>
+        <link rel="stylesheet" href="{% static 'app.css' %}">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h1>Resource Manager</h1>
+            {% if user.is_authenticated %}
+                <p>Hey {{ user }}!</p>
+                <div>
+                    <h4>Some quick actions:</h4>
+                    <a href="{% url 'login' %}">Home</a> | <a href="{% url 'logout' %}">Log Out</a>
+                </div>
+
+            {% endif %}
+        </div>
+        <div class="main">
+            {% block content %}{% endblock content %}
+        </div>
+    </body>
+</html>

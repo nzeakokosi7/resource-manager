@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Manager | Upload Confirmation</title>
+</head>
+<body>
+    <h2>Upload Successful!</h2>
+    <p> Your upload was successful please find your Unique url and password below</p>
+    <p>Please keep them safely as they're your only way to access your resource</p>
+
+    <div><a target=" " href="{{url}}">{{url}}</a></div> <br/>
+    <h4>Note that link expires after 24 hours</h4>
+    <div>PassKey: {{key}}</div> <br/>
+    <a href="{% url 'login' %}">Home</a> | <a href="{% url 'logout' %}">Log Out</a>
+</body>
+</html>

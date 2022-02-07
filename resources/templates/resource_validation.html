@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Manager | Verification</title>
+</head>
+<body>
+    <h2>Access Validation</h2>
+
+    {% if error %}
+        <div class="alert alert-danger">
+            <strong>{{ error }}</strong>
+        </div>
+    {% else %}
+
+    <p> You are trying to access the resource with the link:</p>
+    <p>{{link}}</p>
+
+    <h4>Kindly provide the passkey you were given to proceed:</h4>
+
+    <form method="post" >
+        {{ form }}
+        {% csrf_token %}
+
+        <button type="submit" >Submit</button>
+
+        {% if wrong_password %}
+        <p>
+            <div class="alert alert-danger">
+                <strong>{{ wrong_password }}</strong>
+            </div>
+        </p>
+        {% endif %}
+    </form>
+
+    {% endif %}
+</body>
+</html>
