@@ -59,3 +59,104 @@
 [07/Feb/2022 21:56:25] DEBUG [django.utils.autoreload:342] File /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resourceManager/settings.py previous mtime: None, current mtime: 1644270985.092697
 [07/Feb/2022 21:56:25] DEBUG [django.utils.autoreload:302] /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resourceManager/settings.py notified as changed. Signal results: [(<function translation_file_changed at 0x103fbd430>, None)].
 [07/Feb/2022 21:56:25] INFO [django.utils.autoreload:203] /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resourceManager/settings.py changed, reloading.
+[07/Feb/2022 22:07:15] INFO [django.utils.autoreload:578] Watching for file changes with StatReloader
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:267] Waiting for apps ready_event.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:273] Apps ready_event triggered. Sending autoreload_started signal.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/admin/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/auth/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/messages/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/rest_framework/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/authentication/locale with glob **/*.mo.
+[07/Feb/2022 22:07:15] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/locale with glob **/*.mo.
+[07/Feb/2022 22:07:19] ERROR [django.request:222] Internal Server Error: /authentication/
+Traceback (most recent call last):
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/storage.py", line 153, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/storage.py", line 132, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/storage.py", line 420, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'app.css'
+[07/Feb/2022 22:07:19] ERROR [django.server:154] "GET /authentication/ HTTP/1.1" 500 27
+[07/Feb/2022 22:10:57] INFO [django.utils.autoreload:578] Watching for file changes with StatReloader
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:267] Waiting for apps ready_event.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:273] Apps ready_event triggered. Sending autoreload_started signal.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/admin/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/auth/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/messages/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/rest_framework/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/authentication/locale with glob **/*.mo.
+[07/Feb/2022 22:10:57] DEBUG [django.utils.autoreload:226] Watching dir /Users/nzeakokosi7/PycharmProjects/resoureMgr/resourceManager/resources/locale with glob **/*.mo.
+[07/Feb/2022 22:11:01] DEBUG [django.template:868] Exception while resolving variable 'message' in template 'login.html'.
+Traceback (most recent call last):
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nzeakokosi7/PycharmProjects/resoureMgr/venv/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [message] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x106fc2940>>, 'request': <WSGIRequest: GET '/authentication/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x106ed50a0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106f9d880>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107008760>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x107008700>, 'next': '', 'site': <django.contrib.sites.requests.RequestSite object at 0x106ed5e20>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <p>'>, <Variable Node: message>, <TextNode: '</p>\n    <form method="po'>, <Variable Node: form.as_p>, <TextNode: '\n        '>, <django.template.defaulttags.CsrfTokenNode object at 0x106f5d610>, <TextNode: '\n        <button type="su'>]>}]
+[07/Feb/2022 22:11:01] INFO [django.server:154] "GET /authentication/ HTTP/1.1" 200 780
+[07/Feb/2022 22:11:01] WARNING [django.request:222] Not Found: /static/app.css
+[07/Feb/2022 22:11:01] WARNING [django.server:154] "GET /static/app.css HTTP/1.1" 404 469
